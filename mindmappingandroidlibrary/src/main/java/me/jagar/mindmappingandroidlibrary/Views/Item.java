@@ -25,7 +25,7 @@ public class Item extends LinearLayout {
     HashMap<Connection, Integer> connections = new HashMap<>();
     HashMap<Item, Integer>  parents = new HashMap<>();
 
-    public Item(Context context, String title, String content, boolean defaultStyle){
+    public Item(Context context, String title, String content, String contenst,boolean defaultStyle){
         super(context);
         this.context = context;
         this.defaultStyle = defaultStyle;
