@@ -45,6 +45,10 @@ public class Item extends LinearLayout {
         this.context = context;
     }
 
+    public Peinaw(Context context) {
+        super(context);
+        this.context = context;
+    }
     public Item(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
