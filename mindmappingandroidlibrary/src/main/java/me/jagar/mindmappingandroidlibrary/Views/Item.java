@@ -25,11 +25,11 @@ public class Item extends LinearLayout {
     HashMap<Connection, Integer> connections = new HashMap<>();
     HashMap<Item, Integer>  parents = new HashMap<>();
 
-    public Item(Context context, String title, String content, boolean defaultStyle){
+    public Item(Context context, String titles, String content, boolean defaultStyle){
         super(context);
         this.context = context;
         this.defaultStyle = defaultStyle;
-        this.setTitle(title);
+        this.setTitle(titles);
         this.setContent(content);
         this.addTextViews();
 
@@ -53,9 +53,9 @@ public class Item extends LinearLayout {
     }
 
 
-    public void setTitle(String title){
+    public void setTitle(String titles){
         this.title = new TextView(context);
-        this.getTitle().setText(title);
+        this.getTitle().setText(titles);
         this.getTitle().setTypeface(Typeface.DEFAULT_BOLD);
     }
     public void setContent(String content){
